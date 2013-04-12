@@ -1,4 +1,4 @@
 BatchImagePixelChanger
 ======
 
-Command line usage:
+Command line usage: BatchImagePixelChanger.exe %File% %Count%
