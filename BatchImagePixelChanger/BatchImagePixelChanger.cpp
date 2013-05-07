@@ -64,16 +64,26 @@ int _tmain(int argc, _TCHAR* argv[])
 
 			if(argc == 4){
 				name = argv[3];
-				name += " ";
 			}
 
 			//Create our output file's named: prefex i.png
 			CString t;
 			t.Format(_T("%d"), i);
-			t += ".png";
+			CString ext = argv[1];
+			ext = ext.Mid(ext.GetLength() - 4);
+			if(ext == "jpeg")
+				ext += ".";
+			t += ext;
 
 			//save our file
-			(*img).Save(name + t, Gdiplus::ImageFormatPNG);
+			if(ext == ".png")
+				(*img).Save(name + t, Gdiplus::ImageFormatPNG);
+			if(ext == ".jpg" || ext == ".jpeg")
+				(*img).Save(name + t, Gdiplus::ImageFormatJPEG);
+			if(ext == ".gif")
+				(*img).Save(name + t, Gdiplus::ImageFormatGIF);
+			else
+				(*img).Save(name + t, Gdiplus::ImageFormatPNG);
 
 			//free our stored copy
 			free(img);
