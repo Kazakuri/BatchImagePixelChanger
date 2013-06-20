@@ -6,7 +6,7 @@
 #include <string>
 #include <math.h>
 
-//command line usage exe filename.ext num_copies
+//command line usage exe filename.ext num_copies name_scheme
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
