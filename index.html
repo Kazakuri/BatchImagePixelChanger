@@ -30,12 +30,12 @@
         <section id="main-content">
           <h3><a name="about-the-software" class="anchor" href="#about-the-software"><span class="octicon octicon-link"></span></a>About the software.</h3>
 
-		  <p>BatchImagePixelChanger allows a user to take any given image and make multiple copies of the image that are different enough to evade most duplicate image checks<br />
-		  The algoritm loads in a image and creates copies that picks <code>image.width() * image.height() * 0.05</code> pixels (5% of the pixels) randomly from the image (may pick the same pixel twice) and subtracts 5 from the RGB values before saving it to a new file.</p>
+		  <p>BatchImagePixelChanger allows a user to take any given image and make multiple copies of the image that are different enough to evade most duplicate image checks.<br />
+		  The algoritm loads in a image and creates copies that picks <br /><code>image.width() * image.height() * 0.05</code> pixels (5% of the pixels) randomly from the image (may pick the same pixel twice) and subtracts 5 from the RGB values before saving it to a new file.</p>
 
 		  <h3><a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage.</h3>
 
-		  <p>Using BatchImagePixelChanger is fairly simple, calling the program from the command line you can direct it like so: <code>BatchImagePixelChanger "<file-name>" <copy-count> "<naming-scheme>"</code><br />
+		  <p>Using BatchImagePixelChanger is fairly simple, calling the program from the command line you can direct it like so: <code>BatchImagePixelChanger "file-name" copy-count "naming-scheme"</code><br />
 		  It is recommended to use quotes in the naming scheme and file names so that the program recognizes the spaces in the names.<br />
 		  The program will output files in the format of <code><naming-scheme> #.fileext</code></p>
         </section>
