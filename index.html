@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>BatchImagePixelChanger</h1>
-        <h2>Extended and Rewritten MyAnimeVerifier</h2>
+        <h2>Allows the evasion of duplicate image errors</h2>
         <a href="https://github.com/matt4682/BatchImagePixelChanger" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -28,10 +28,16 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h3><a name="about-the-software" class="anchor" href="#about-the-software"><span class="octicon octicon-link"></span></a>About the software.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		  <p>BatchImagePixelChanger allows a user to take any given image and make multiple copies of the image that are different enough to evade most duplicate image checks<br />
+		  The algoritm loads in a image and creates copies that picks <code>image.width() * image.height() * 0.05</code> pixels (5% of the pixels) randomly from the image (may pick the same pixel twice) and subtracts 5 from the RGB values before saving it to a new file.</p>
+
+		  <h3><a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage.</h3>
+
+		  <p>Using BatchImagePixelChanger is fairly simple, calling the program from the command line you can direct it like so: <code>BatchImagePixelChanger "<file-name>" <copy-count> "<naming-scheme>"</code><br />
+		  It is recommended to use quotes in the naming scheme and file names so that the program recognizes the spaces in the names.<br />
+		  The program will output files in the format of <code><naming-scheme> #.fileext</code></p>
         </section>
 
         <aside id="sidebar">
